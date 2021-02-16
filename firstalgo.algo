@@ -1,0 +1,41 @@
+ALGORITHM Sentence
+VAR
+  lenghS :integer;
+  Nbword : integer:=1 ;
+  NbV : integer;
+
+  
+BEGIN
+ Sentence = array[];
+ Read ('Sentence');
+FOR (i=0;i<=Sentence.lengh;i++)
+ 
+    IF (Sentence[i]:='a','A','b','B','c','C','D','d','f','F','j','J','H','h','i','I','g','G','k','K','l','L','m','M','n','N','O','o','p','P','q','Q','r','R','s','S','t','T','u','U','V','v','w','W','z','Z','y','Y','X','x'])
+    THEN  lenghS:=lenghS+1;
+    Write ('lenghS')
+    ELSE Write('error');
+    END_IF
+
+
+    FOR (j=0;j<=Sentence.lengh;j++)
+    IF (Sentence[j]:=['_']) THEN
+        Nbword:=Nbword+1;
+        Write(Nbword);
+    ELSE  Write('error');
+    END_IF 
+
+FOR (z=0;z<=Sentence.lengh;z++)
+IF (Sentence[z]:=[a,A,e,E,y,Y,u,U,i,I,o,O]) THEN
+    NbV:=NbV+1;
+    Write('NbV');
+ELSE Write('error')
+END_IF
+END
+
+
+
+
+
+
+    
+
